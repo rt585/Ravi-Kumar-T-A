@@ -11,11 +11,15 @@
 		</style>
 	<body>
 	<p style="background-color:Tomato;">
-		<script scr= "JavaScript.js">
-		</script>
+	
 		Hello, my name is Ravi Kumar T A pursuing Masters in Drexel University and working for DXC Technology.</p>
 		
 		<button type="button" onclick="alert('You Just clicked me')">Click Me!</button>
+		const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.innerHTML = `Click count: ${event.detail}`;
+});
 		
 	</body>
 	</html>
